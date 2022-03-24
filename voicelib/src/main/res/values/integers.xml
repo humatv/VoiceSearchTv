@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="lb_search_bar_text_mode_background_alpha">51</integer>
+    <integer name="lb_search_bar_speech_mode_background_alpha">179</integer>
+</resources>

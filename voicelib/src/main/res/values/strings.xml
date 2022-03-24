@@ -1,0 +1,14 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SearchWithVoice</string>
+
+    <!-- Image description for the call to search action visible when browsing content [CHAR LIMIT=40] -->
+    <string name="orb_search_action">Search Action</string>
+    <!-- Hint showing in the empty search bar [CHAR LIMIT=40] -->
+    <string name="lb_search_bar_hint">Search</string>
+    <!-- Hint showing in the empty search bar when using the voice input [CHAR LIMIT=40] -->
+    <string name="lb_search_bar_hint_speech">Speak to search</string>
+    <!-- Hint showing in the empty search bar using a provided context (usually the application name) [CHAR LIMIT=40] -->
+    <string name="lb_search_bar_hint_with_title">Search <xliff:g id="search context">%1$s</xliff:g></string>
+    <!-- Hint showing in the empty search bar using a provided context (usually the application name) while in voice input mode [CHAR LIMIT=40] -->
+    <string name="lb_search_bar_hint_with_title_speech">Speak to search <xliff:g id="search context">%1$s</xliff:g></string>
+</resources>

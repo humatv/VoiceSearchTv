@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LeanbackTheme">
+        <attr name="searchOrbViewStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="lbSearchOrbView">
+        <!-- Defining icon of the search affordance -->
+        <attr name="searchOrbIcon" format="reference"/>
+        <!-- Defining icon tint color of the search affordance -->
+        <attr name="searchOrbIconColor" format="reference|color"/>
+        <!-- Defining color of the search affordance -->
+        <attr name="searchOrbColor" format="reference|color" />
+        <!-- Defining pulse color of the search affordance -->
+        <attr name="searchOrbBrightColor" format="reference|color" />
+    </declare-styleable>
+</resources>

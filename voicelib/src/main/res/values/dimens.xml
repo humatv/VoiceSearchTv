@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="lb_search_bar_edit_text_margin_start">24dp</dimen>
+    <dimen name="lb_search_bar_height">60dp</dimen>
+    <dimen name="lb_search_bar_hint_margin_start">52dp</dimen>
+    <dimen name="lb_search_bar_icon_height">32dp</dimen>
+    <dimen name="lb_search_bar_icon_margin_start">16dp</dimen>
+    <dimen name="lb_search_bar_icon_width">32dp</dimen>
+    <dimen name="lb_search_bar_inner_margin_bottom">2dp</dimen>
+    <dimen name="lb_search_bar_inner_margin_top">2dp</dimen>
+    <dimen name="lb_search_bar_items_height">56dp</dimen>
+    <dimen name="lb_search_bar_items_layout_margin_top">27dp</dimen>
+    <dimen name="lb_search_bar_items_margin_start">70dp</dimen>
+    <dimen name="lb_search_bar_items_width">600dp</dimen>
+    <dimen name="lb_search_bar_padding_start">56dp</dimen>
+    <dimen name="lb_search_bar_padding_top">27dp</dimen>
+    <dimen name="lb_search_bar_speech_orb_margin_start">56dp</dimen>
+    <dimen name="lb_search_bar_speech_orb_size">52dp</dimen>
+    <dimen name="lb_search_bar_text_size">18sp</dimen>
+    <dimen name="lb_search_bar_unfocused_text_size">18sp</dimen>
+    <dimen name="lb_search_browse_row_padding_start">56dp</dimen>
+    <dimen name="lb_search_browse_rows_align_top">147dp</dimen>
+    <dimen name="lb_search_orb_focused_z">8dp</dimen>
+    <dimen name="lb_search_orb_margin_bottom">4dp</dimen>
+    <dimen name="lb_search_orb_margin_end">4dp</dimen>
+    <dimen name="lb_search_orb_margin_start">4dp</dimen>
+    <dimen name="lb_search_orb_margin_top">4dp</dimen>
+    <dimen name="lb_search_orb_size">52dp</dimen>
+    <dimen name="lb_search_orb_unfocused_z">2dp</dimen>
+    <item name="lb_search_bar_speech_orb_max_level_zoom" type="fraction">144%</item>
+    <item name="lb_search_orb_focused_zoom" type="fraction">120%</item>
+
+
+    <item name="lb_search_orb_pulse_duration_ms" type="integer">1000</item>
+    <item name="lb_search_orb_scale_duration_ms" type="integer">150</item>
+
+</resources>
