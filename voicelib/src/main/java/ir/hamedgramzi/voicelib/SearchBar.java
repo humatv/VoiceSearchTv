@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -125,6 +126,7 @@ public class SearchBar extends RelativeLayout {
     boolean mAutoStartRecognition = false;
     private Drawable mBarBackground;
     private final int mTextColor;
+    private Typeface typeface;
     private final int mTextColorSpeechMode;
     private final int mTextHintColor;
     private final int mTextHintColorSpeechMode;
@@ -184,6 +186,8 @@ public class SearchBar extends RelativeLayout {
         RelativeLayout items = (RelativeLayout) findViewById(R.id.lb_search_bar_items);
         mBarBackground = items.getBackground();
         mSearchTextEditor = (SearchEditText) findViewById(R.id.lb_search_text_editor);
+        if (typeface != null)
+            mSearchTextEditor.setTypeface(typeface);
         mBadgeView = (ImageView) findViewById(R.id.lb_search_bar_badge);
         if (null != mBadgeDrawable) {
             mBadgeView.setImageDrawable(mBadgeDrawable);
@@ -789,6 +793,10 @@ public class SearchBar extends RelativeLayout {
     public void setNextFocusDownId(int viewId) {
         mSpeechOrbView.setNextFocusDownId(viewId);
         mSearchTextEditor.setNextFocusDownId(viewId);
+    }
+
+    public void setTypeface(Typeface typeface) {
+        this.typeface = typeface;
     }
 
     public void setLanguage(String language, String country) {

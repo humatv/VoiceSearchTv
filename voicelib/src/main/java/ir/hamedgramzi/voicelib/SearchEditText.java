@@ -13,6 +13,7 @@ package ir.hamedgramzi.voicelib;
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -24,6 +25,7 @@ import android.view.KeyEvent;
 public class SearchEditText extends StreamingTextView {
     private static final String TAG = SearchEditText.class.getSimpleName();
     private static final boolean DEBUG = false;
+
     /**
      * Interface for receiving notification when the keyboard is dismissed.
      */
@@ -33,16 +35,21 @@ public class SearchEditText extends StreamingTextView {
          */
         public void onKeyboardDismiss();
     }
+
     private OnKeyboardDismissListener mKeyboardDismissListener;
+
     public SearchEditText(Context context) {
         this(context, null);
     }
+
     public SearchEditText(Context context, AttributeSet attrs) {
         this(context, attrs, com.google.android.material.R.style.TextAppearance_AppCompat);
     }
+
     public SearchEditText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
+
     @Override
     public boolean onKeyPreIme(int keyCode, KeyEvent event) {
         if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
@@ -52,8 +59,12 @@ public class SearchEditText extends StreamingTextView {
             }
             return false;
         }
+        if (event.getKeyCode() == KeyEvent.KEYCODE_DPAD_RIGHT && event.getAction() == KeyEvent.ACTION_UP) {
+            return true;
+        }
         return super.onKeyPreIme(keyCode, event);
     }
+
     /**
      * Sets a keyboard dismissed listener.
      *

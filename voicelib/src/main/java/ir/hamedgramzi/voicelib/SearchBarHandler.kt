@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.graphics.Typeface
 import android.speech.SpeechRecognizer
 import android.util.Log
 import androidx.core.app.ActivityCompat.requestPermissions
@@ -62,6 +63,14 @@ class SearchBarHandler(
         searchBar.setPermissionListener(mPermissionListener)
     }
 
+
+    fun setTypeface(typeface: Typeface){
+        searchBar.setTypeface(typeface)
+    }
+
+    fun requestFocus() {
+        searchBar.requestFocus()
+    }
 
     fun resume() {
         if (mSpeechRecognizer == null) {
